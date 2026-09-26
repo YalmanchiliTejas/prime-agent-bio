@@ -11,7 +11,16 @@ packages/*/dist-firefox/
 
 # Environment
 .env
-.prime/
+.prime/*
+!.prime/agent/
+.prime/agent/*
+!.prime/agent/APPEND_SYSTEM.md
+!.prime/agent/extensions/
+!.prime/agent/extensions/deviation-hitl.ts
+!.prime/agent/skills/
+.prime/agent/skills/*
+!.prime/agent/skills/deviation/
+!.prime/agent/skills/deviation/**
 
 # Editor files
 .vscode/
@@ -40,7 +49,6 @@ packages/coding-agent/binaries/
 packages/coding-agent/release/
 todo.md
 plans/
-.prime/agent/
 collect.sh
 .kernel-venv/
 .worktrees/
